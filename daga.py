@@ -81,7 +81,7 @@ class Daga:
                 self.males[self.taken[i]] = second
         
 
-    def mutation():
+    def mutation(self):
         for i in range(len(self.females)):
             rand_fem = rand.randrange(len(self.females))
             rand_male = rand.randrange(len(self.males))
@@ -117,7 +117,7 @@ def main():
     while(d.count <= d.max_cycles):
         d.selection()
         d.crossover()
-        d.mutation
+        d.mutation()
     #print(d.males)
     #print(d.females)
 
